@@ -4,10 +4,9 @@
   "description": "JavaScript Action Template",
   "main": "index.js",
   "scripts": {
-    "lint": "eslint .",
-    "prepare": "ncc build index.js -o dist --source-map",
-    "test": "jest --passWithNoTests",
-    "all": "npm run lint && npm run prepare && npm run test"
+    "lint": "eslint index.js",
+    "package": "ncc build index.js -o dist",
+    "test": "eslint index.js && jest --passWithNoTests"
   },
   "repository": {
     "type": "git",
@@ -18,7 +17,7 @@
     "Actions",
     "JavaScript"
   ],
-  "author": "",
+  "author": "GitHub",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/actions/javascript-action/issues"
@@ -26,12 +25,11 @@
   "homepage": "https://github.com/actions/javascript-action#readme",
   "dependencies": {
     "@actions/core": "^1.1.1",
-    "@actions/github": "^4.0.0",
-    "@octokit/rest": "^18.0.3"
+    "@actions/github": "^2.1.0"
   },
   "devDependencies": {
-    "@zeit/ncc": "^0.22.3",
-    "eslint": "^7.4.0",
-    "jest": "^26.1.0"
+    "@zeit/ncc": "^0.20.5",
+    "eslint": "^6.3.0",
+    "jest": "^24.9.0"
   }
 }
