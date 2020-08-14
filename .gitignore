@@ -1,9 +1,7 @@
 node_modules/
 
 # Editors
-.vscode/
-.idea/
-*.iml
+.vscode
 
 # Logs
 logs

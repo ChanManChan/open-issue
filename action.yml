@@ -20,4 +20,4 @@ runs:
   main: "dist/index.js"
 branding:
   icon: "alert-octagon"
-  color: "red"
+  color: "purple"
